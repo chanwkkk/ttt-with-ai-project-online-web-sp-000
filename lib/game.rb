@@ -58,6 +58,7 @@ end
 
 def turn
     puts "Please enter a number 1-9:"
+    puts "During the game,you can input \"exit\"to restart the game!"
     puts "It is No.#{@board.turn_count+1} round! And it is #{current_player.token}'s turn!"
     user_input = current_player.move(@board)
     if @board.valid_move?(user_input)
