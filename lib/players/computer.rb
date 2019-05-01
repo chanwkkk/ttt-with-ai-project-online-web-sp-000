@@ -12,11 +12,11 @@ class Computer < Player
         move = "5"
 
       # If going second and the middle square is taken, take the upper-left corner square.
-    #elsif board.turn_count == 1||
-        #move = "1"
+    elsif board.turn_count == 1
+        move = "1"
 
       # If you went first (and took the middle), take a corner square with your second move.
-    elsif board.turn_count == 2||board.turn_count == 1
+      elsif board.turn_count == 2
         move = [1, 3, 7, 9].select{|i| !board.taken?(i)}.sample.to_s #at first instead of select, it uses find/detect
         #so when i choose two computers playing mode, they will always use the same strategy so it will be predictable and boring!
         #now at least i add some kinds of randomness to it by adding select and then get a sample from it
