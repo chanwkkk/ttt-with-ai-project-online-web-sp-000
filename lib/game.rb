@@ -128,6 +128,7 @@ end
 
 def two_player
    puts "You want to play with your friend? Great!Whoever plays first will be assigned an \"X\"!"
+   binding.pry
    play
 end
 
