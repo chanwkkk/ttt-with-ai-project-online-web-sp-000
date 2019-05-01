@@ -65,7 +65,7 @@ def turn
        @board.display
     elsif user_input=="exit"
       start
-    else       
+    else
       puts "Wrong input."
       @board.display
       turn
