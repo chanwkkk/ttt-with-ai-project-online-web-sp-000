@@ -4,6 +4,7 @@ class Computer < Player
 
   ##mostly reference from the online source, but I change something on line 19,check the comment there
   def move(board)
+
       move = nil
 
       # When going first, take the middle square. When going second, take the middle square if it isn't yet taken.
