@@ -63,7 +63,10 @@ def turn
     if @board.valid_move?(user_input)
        @board.update(user_input, current_player)
        @board.display
-    else  puts "Wrong input."
+    elsif user_input=="exit"
+      start
+    else       
+      puts "Wrong input."
       @board.display
       turn
     end
